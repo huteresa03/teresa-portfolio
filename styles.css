@@ -525,9 +525,14 @@ details.p-more .more-body li { margin-bottom: 8px; margin-left: 18px; }
 .xp-logo img {
   height: 40px;
   width: auto;
-  max-width: 170px;
+  max-width: 175px;
   object-fit: contain;
   display: block;
+}
+.xp-logo img[src*="newegg"],
+.xp-logo img[src*="fonterra"] {
+  height: 58px;
+  max-width: 200px;
 }
 .xp h3 {
   font-family: var(--serif);
