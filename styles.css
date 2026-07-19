@@ -517,6 +517,22 @@ details.p-more .more-body li { margin-bottom: 8px; margin-left: 18px; }
   animation: pulse 2.4s ease-in-out infinite;
 }
 @keyframes pulse { 50% { opacity: 0.55; } }
+.xp-logo {
+  display: inline-block;
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid var(--sand);
+  border-radius: 8px;
+  padding: 8px 12px;
+  line-height: 0;
+}
+.xp-logo img {
+  height: 26px;
+  width: auto;
+  max-width: 130px;
+  object-fit: contain;
+  display: block;
+}
 .xp h3 {
   font-family: var(--serif);
   font-weight: 550;
