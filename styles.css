@@ -173,7 +173,7 @@ section { padding: 96px 0 40px; }
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
   padding: 48px 0 40px;
 }
 .hero-title {
@@ -183,7 +183,7 @@ section { padding: 96px 0 40px; }
   line-height: 0.98;
   letter-spacing: -0.015em;
 }
-.hero-title .line { display: block; overflow: hidden; }
+.hero-title .line { display: block; overflow: hidden; padding-bottom: 0.16em; }
 .hero-title .line > span {
   display: inline-block;
   transform: translateY(110%);
