@@ -518,18 +518,14 @@ details.p-more .more-body li { margin-bottom: 8px; margin-left: 18px; }
 }
 @keyframes pulse { 50% { opacity: 0.55; } }
 .xp-logo {
-  display: inline-block;
-  margin-top: 16px;
-  background: #fff;
-  border: 1px solid var(--sand);
-  border-radius: 8px;
-  padding: 8px 12px;
+  display: block;
+  margin-top: 18px;
   line-height: 0;
 }
 .xp-logo img {
-  height: 26px;
+  height: 40px;
   width: auto;
-  max-width: 130px;
+  max-width: 170px;
   object-fit: contain;
   display: block;
 }
