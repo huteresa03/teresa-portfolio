@@ -136,6 +136,7 @@ section { padding: 96px 0 40px; }
   transition: transform 0.3s ease;
 }
 .nav-links a:hover::after { transform: scaleX(1); }
+.nav-links a.nav-resume { color: var(--oxblood); font-weight: 600; }
 .nav-toggle {
   display: none;
   margin-left: auto;
@@ -889,4 +890,57 @@ details.p-more .more-body li { margin-bottom: 8px; margin-left: 18px; }
   .phone-row { gap: 12px; }
   .polaroids { gap: 18px; }
   .contact { padding-top: 80px; }
+}
+
+/* ---------- résumé page ---------- */
+.resume-page { padding: 140px 0 40px; }
+.resume-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 44px 0 40px;
+}
+.resume-head .kicker { display: block; }
+.resume-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(46px, 6.4vw, 80px);
+  line-height: 1;
+  letter-spacing: -0.015em;
+  margin: 14px 0 18px;
+}
+.resume-title em { font-style: italic; color: var(--oxblood); }
+.resume-sub {
+  max-width: 520px;
+  font-size: 15.5px;
+  color: var(--ink-soft);
+}
+.resume-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.resume-frame {
+  display: block;
+  max-width: 860px;
+  margin: 0 auto;
+  border: 1.5px solid var(--ink);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 14px 14px 0 var(--blush), 14px 14px 0 1.5px var(--ink);
+}
+.resume-doc {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+  background: #fff;
+  transition: transform 0.6s ease;
+}
+.resume-frame:hover .resume-doc { transform: scale(1.012); }
+@media (max-width: 720px) {
+  .resume-page { padding-top: 110px; }
+  .resume-head { align-items: flex-start; }
+  .resume-actions { width: 100%; }
+  .resume-actions .btn { flex: 1; justify-content: center; }
+  .resume-frame { box-shadow: 8px 8px 0 var(--blush), 8px 8px 0 1.5px var(--ink); }
 }
