@@ -519,10 +519,13 @@ details.p-more .more-body li { margin-bottom: 8px; margin-left: 18px; }
 }
 @keyframes pulse { 50% { opacity: 0.55; } }
 .xp-logo {
-  display: block;
+  display: inline-block;
   margin-top: 18px;
   line-height: 0;
+  opacity: 1;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
+.xp-logo:hover { opacity: 0.75; transform: translateY(-2px); }
 .xp-logo img {
   height: 40px;
   width: auto;
