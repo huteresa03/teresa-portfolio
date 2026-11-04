@@ -988,12 +988,31 @@ details.p-more .more-body li { margin-bottom: 8px; margin-left: 18px; }
   line-height: 1.2;
   margin: 8px 0 12px;
 }
+.cert-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 0 0 14px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+.cert-meta span + span { position: relative; padding-left: 15px; }
+.cert-meta span + span::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: var(--taupe);
+}
 .cert-card p {
   font-size: 14.5px;
   color: var(--ink-soft);
   margin-bottom: 18px;
 }
 .cert-card .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.cert-link { margin-top: 20px; }
 
 @media (max-width: 960px) {
   .cert-grid { grid-template-columns: 1fr; }
